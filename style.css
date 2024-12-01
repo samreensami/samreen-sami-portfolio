@@ -1,0 +1,325 @@
+/* Reset and Base Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: black;
+    line-height: 1.6;
+    background-color: #cce1c4;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation */
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 10px 0;
+    text-align: center;
+    background: linear-gradient(300deg, #2d3a19, #9aa98c); /* Gradient background */
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    background-color: #d2f288;
+    padding: 10px 0;
+    margin: 0;
+    gap: 20px;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #252a16;
+    transition: background-color 0.3s;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Buttons */
+.btn, .cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.btn {
+    color: #f3e8d3;
+    background-color: #133215;
+}
+
+.btn:hover {
+    background-color: #f3e8d3;
+    color: #133215;
+}
+
+.cta-button {
+    color: #133215;
+    background-color: #5b7338;
+}
+
+.cta-button:hover {
+    background-color: #f3e8d3;
+    color: #133215;
+}
+
+/* General Section Styling */
+.section {
+    padding: 50px 20px;
+    text-align: center;
+    min-height: 100vh;
+}
+
+#home {
+    text-align: center;
+    padding: 70px 10px;
+    background:  #a6d47d;
+}
+
+#home h1 {
+    font-size: 3rem;
+    font-style: italic;
+    color: #133215;
+    margin: 15px 0;
+    text-align: center;
+}
+
+#home p {
+    font-size: x-large;
+    padding-top: 100px;
+}
+
+/* Buttons in Content */
+.button-container a {
+    display: inline-block;
+    gap: 10px;
+    margin: 20px;
+}
+
+/* Content Container */
+.content-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+}
+
+.text-content p {
+    max-width: 500px;
+    margin:0 auto;
+}
+
+/* Image Styling */
+.image-content {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    height: 0%;
+    overflow: hidden;
+    padding: 10px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+    align-items: center;
+    justify-content: center;
+    img {
+        box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.3); /* Horizontal, Vertical, Blur, Spread */
+    }
+    
+}
+
+.image-content:hover {
+    transform: scale(1.1);
+}
+
+.image-content img {
+    max-width: 200px;
+    border-radius: 50%;
+}
+
+/* About Section */
+#about-container {
+    background-color: #cfe6aa;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
+}
+
+#about-container p {
+    font-size: 1.5rem;
+    color: #133215;
+    margin: 20px 0;
+    margin-left: 10px;
+    margin-top: 10px;
+
+}
+
+#about-container h1{
+    font-size: 2.5rem;
+    color: #133215;
+    margin-bottom: 80px;
+    margin-top: 40px;
+    text-align: center;
+    
+}
+
+.about-image {
+    flex: 1;
+
+   
+}
+
+.about-image img {
+    max-width: 40%;
+    border-radius: 30px;
+    float: left;
+    margin-right: 300px;
+}
+
+/* About Content */
+.about-content {
+    flex: 1;
+
+}
+
+.about-content p{
+    font-size: 1.2rem;
+    color: #133215;
+    margin: 10px 0;
+    margin-left: 40px;
+}
+
+/* Projects Section */
+#projects {
+    background-color: #b0e08b;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
+}
+
+#projects h2 {
+    font-size: 2.5rem;
+    color: #133215;
+    margin-bottom: 80px;
+    margin-top: 40px;
+    text-align: center;
+}
+
+/* Contact Section */
+#contact-info {
+    text-align: left;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #ecf8c3;
+    
+}
+
+#contact-info h2 {
+    font-size: 2.5rem;
+    color: #133215;
+    margin-bottom: 80px;
+    margin-top: 40px;
+    text-align: center;
+}
+
+#contact-info p {
+    font-size: 1.2rem;
+    color: #133215;
+    margin: 10px 0;
+    margin-top: 50px;
+}
+
+#contact-info i {
+    color: #74935b;
+    margin-right: 5px;
+}
+
+#contact-info a {
+    color: #133215;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+#contact-info a:hover {
+    color: #92b775;
+}
+
+/* Global Heading Styles */
+h1 {
+    color: #133215;
+    text-align: center;
+}
+
+h3 {
+    color: #133215;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: linear-gradient(300deg, #5b7338, #f3e8d3); /* Gradient background */
+    color: #133215;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Animations */
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.slide-in {
+    animation: slideInLeft 1s ease-in-out;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .content-container {
+        flex-direction: column;
+    }
+
+    .image-content img {
+        width: 80%;
+    }
+
+    #about-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-content {
+        padding-right: 0;
+        align-items: center;
+    }
+}
+.project-list a{
+    text-decoration: none;
+    color: #133215;
+    transition: color 0.3s ease;
+    font-size: 2rem;
+}
